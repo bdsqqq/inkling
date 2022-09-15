@@ -1,15 +1,22 @@
 ---
+import inklingMP4 from "../../public/video/inkling.mp4";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Dancing inkling</title>
+  </head>
+  <body class="bg-zinc-900">
+    <div class="flex justify-end overflow-hidden">
+      <div class="min-h-screen w-auto aspect-video -mr-40 sm:mr-0">
+        <video class="w-full h-full" autoplay muted loop>
+          <source src={inklingMP4} />
+        </video>
+      </div>
+    </div>
+  </body>
 </html>
