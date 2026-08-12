@@ -1,5 +1,5 @@
 ---
-import inklingMP4 from "../../public/video/inkling.mp4";
+import '../styles/global.css';
 ---
 
 <html lang="en">
@@ -14,7 +14,7 @@ import inklingMP4 from "../../public/video/inkling.mp4";
     <div class="flex justify-end overflow-hidden">
       <div class="min-h-screen w-auto aspect-video -mr-40 sm:mr-0">
         <video class="w-full h-full" autoplay muted loop>
-          <source src={inklingMP4} />
+          <source src="/video/inkling.mp4" type="video/mp4" />
         </video>
       </div>
     </div>
